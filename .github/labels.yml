@@ -1,0 +1,19 @@
+# Triage labels. Same names, colors and descriptions as the five triage labels
+# of the private app repository, so the weekly feedback sweep runs its state
+# machine here unchanged. Create or sync them with:
+#   gh label create <name> --color <color> --description "<description>" --force
+- name: needs-triage
+  color: BFD4F2
+  description: Maintainer needs to evaluate
+- name: needs-info
+  color: FEF2C0
+  description: Waiting on reporter for more information
+- name: ready-for-agent
+  color: 0E8A16
+  description: Fully specified, AFK-ready for an agent to pick up
+- name: ready-for-human
+  color: 5319E7
+  description: Needs human implementation
+- name: wontfix
+  color: ffffff
+  description: This will not be worked on

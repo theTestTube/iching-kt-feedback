@@ -1,0 +1,30 @@
+name: "Suggestion / Sugerencia / 建議"
+description: "An idea to improve the app. · Una idea para mejorar la app. · 改善應用程式的想法。"
+labels: [needs-triage, enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not post account emails, Google Play account details or device identifiers. Quote app text only briefly: name the hexagram and line instead of pasting passages.
+
+        **Este issue es público.** No publiques el correo electrónico de tu cuenta, datos de tu cuenta de Google Play ni identificadores del dispositivo. Cita el texto de la app solo brevemente: indica el hexagrama y la línea en lugar de pegar pasajes.
+
+        **此議題公開可見。** 請勿張貼帳號電子郵件、Google Play 帳號資料或裝置識別碼。引用應用程式內的文字請盡量簡短：註明卦名與爻位即可，勿貼上整段文字。
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Your suggestion / Tu sugerencia / 你的建議"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Why it would help / Por qué ayudaría / 這會帶來什麼幫助"
+    validations:
+      required: false
+  - type: input
+    id: app-version
+    attributes:
+      label: "App version (optional) / Versión de la app (opcional) / 應用程式版本（選填）"
+    validations:
+      required: false

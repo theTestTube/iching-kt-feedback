@@ -1,0 +1,66 @@
+name: "Bug report / Informe de error / 錯誤回報"
+description: "Something in the app does not work as expected. · Algo de la app no funciona como debería. · 應用程式某處運作不如預期。"
+labels: [needs-triage, bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not post account emails, Google Play account details or device identifiers. Quote app text only briefly: name the hexagram and line instead of pasting passages.
+
+        **Este issue es público.** No publiques el correo electrónico de tu cuenta, datos de tu cuenta de Google Play ni identificadores del dispositivo. Cita el texto de la app solo brevemente: indica el hexagrama y la línea en lugar de pegar pasajes.
+
+        **此議題公開可見。** 請勿張貼帳號電子郵件、Google Play 帳號資料或裝置識別碼。引用應用程式內的文字請盡量簡短：註明卦名與爻位即可，勿貼上整段文字。
+  - type: input
+    id: app-version
+    attributes:
+      label: "App version / Versión de la app / 應用程式版本"
+      description: "Android Settings → Apps → Fuxi's Eight Gates → App info (bottom of the page). · Ajustes de Android → Aplicaciones → Fuxi's Eight Gates → Información de la aplicación (al final de la página). · Android 設定 → 應用程式 → Fuxi's Eight Gates → 應用程式資訊（頁面底部）。"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: "Device model / Modelo del dispositivo / 裝置型號"
+      placeholder: "Samsung Galaxy XCover Pro 2"
+    validations:
+      required: true
+  - type: input
+    id: android-version
+    attributes:
+      label: "Android version / Versión de Android / Android 版本"
+      placeholder: "16"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: "App language / Idioma de la app / 應用程式語言"
+      options:
+        - English
+        - Español
+        - 中文
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / Pasos para reproducirlo / 重現步驟"
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What you expected / Qué esperabas / 預期結果"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "What happened instead / Qué pasó en cambio / 實際結果"
+      description: "Screenshots help. Check them for personal data first. · Las capturas de pantalla ayudan. Antes de subirlas, comprueba que no muestren datos personales. · 截圖很有幫助，上傳前請確認不含個人資料。"
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Email / Correo / 電子郵件: feedback@thetesttube.org"
+    url: https://github.com/theTestTube/iching-kt-feedback#how-to-give-feedback
+    about: "No GitHub account? Send your feedback by email. · ¿Sin cuenta de GitHub? Envía tus comentarios por correo. · 沒有 GitHub 帳號？請以電子郵件寄送意見。"
